@@ -9,11 +9,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Images(models.Model):
-    height = models.PositiveIntegerField()
-    width=models.PositiveIntegerField()
+    # height = models.PositiveIntegerField()
+    # width=models.PositiveIntegerField()
 
-    file=models.ImageField(upload_to='images', height_field='height', 
- width_field='width') #From stackoverflow
+    file=models.ImageField(upload_to='images/')#From stackoverflow
+    #height_field='height', width_field = 'width
     # file = models.ImageField(#upload_to=user_directory_path,
     # width_field=100, height_field=100, blank=True, null=True)
     name = models.CharField(max_length=30)

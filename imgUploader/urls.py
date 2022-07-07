@@ -6,4 +6,5 @@ app_name = 'imgUploader'
 
 urlpatterns = [
     path('', views.imgUpload, name='Upload Images'),
+    path("house/", views.House, name="House"),
 ]
