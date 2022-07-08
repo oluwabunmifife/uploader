@@ -12,7 +12,7 @@ def imgUpload(request):
         file = request.POST['file']
         name = request.POST['name']
         description = request.POST['description']
-        form = ImageForm(request.POST)
+        form = ImageForm(request.POST, request.FILES)
         pic = Images.objects.create(file=file, name=name, description=description)
         pic.save()
         return render(request, 'house.html', {'pic': pic})
