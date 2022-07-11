@@ -9,6 +9,6 @@ class ImageForm(ModelForm):
             'file', 'name', 'description',
         )
         widget = {
-            "file": forms.ClearableFileInput(attrs={'type':'file','class': 'form-control', 'placeholder': "Upload Image"})
+            #"file": forms.ClearableFileInput(attrs={'type':'file','class': 'form-control', 'placeholder': "Upload Image"})
             
         }

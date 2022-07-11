@@ -12,7 +12,7 @@ class Images(models.Model):
     # height = models.PositiveIntegerField()
     # width=models.PositiveIntegerField()
 
-    file=models.ImageField(upload_to='images/')#From stackoverflow
+    file=models.ImageField()#From stackoverflow
     #height_field='height', width_field = 'width
     # file = models.ImageField(#upload_to=user_directory_path,
     # width_field=100, height_field=100, blank=True, null=True)

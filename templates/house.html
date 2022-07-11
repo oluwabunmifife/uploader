@@ -1,6 +1,9 @@
+{% load static %}
 <h1>This is the House Page</h1>
 
-{%for pic in pics%}
-{{pic}}
+{%for pic in pic%}
+<p> This is {{pic.name}} </p> <br>
+<img src="{{ pic.file.url }}" alt="" width="100" height="100">
+<p>{{pic.description}}</p>
 {% comment %} <img src="{{pic}}" alt=""> {% endcomment %}
 {%endfor%}

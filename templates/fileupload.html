@@ -3,6 +3,7 @@
 <form action="" method="POST" enctype="multipart/form-data"> <!--To allow images-->
     {% csrf_token %}
     {{form.as_p}}
+    
     <br><br>
     <input type="submit" value="Submit">
 </form>
