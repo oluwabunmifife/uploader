@@ -22,3 +22,10 @@ class Images(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property #for returning images....
+    def get_img_url(self):
+        if self.file and hasattr(self.file, 'url'):
+            return self.file.url
+        else:
+            return ''

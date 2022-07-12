@@ -2,8 +2,16 @@
 <h1>This is the House Page</h1>
 
 {%for pic in pic%}
-<p> This is {{pic.name}} </p> <br>
+
+
+
+<a href="{% url 'project:page' pic.id %}">
+    <p> This is {{pic.name}} </p> <br>
+</a>
+
 <img src="{{ pic.file.url }}" alt="" width="100" height="100">
+
 <p>{{pic.description}}</p>
 {% comment %} <img src="{{pic}}" alt=""> {% endcomment %}
+
 {%endfor%}

@@ -27,3 +27,8 @@ def imgUpload(request):
 def House(request):
     pic = Images.objects.all()
     return render(request, 'house.html', {'pic': pic})
+
+
+def page(request, pk):
+    pk = pk
+    return render(request, 'page.html', {"pk":pk})
